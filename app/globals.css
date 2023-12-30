@@ -15,13 +15,17 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+@layer base {
+  html {
+    font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+  }
+}
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: rgb(var(--background-end-rgb));
+}
+
+.theme-bg {
+  background-color: rgb(var(--background-end-rgb));
 }
